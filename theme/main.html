@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page and not page.is_homepage %}{{ page.title | e }} · {% endif %}{{ config.site_name | e }}</title>
+  <meta name="description" content="{{ config.site_description | e }}">
+  {% if page and page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url | e }}">{% endif %}
+  {% for path in config.extra_css %}<link rel="stylesheet" href="{{ path | url }}">{% endfor %}
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="shell">
+    <header>
+      <a class="wordmark" href="{{ nav.homepage.url | url }}" aria-label="Tim Bouma home">TB<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="{{ nav.homepage.url | url }}#about">About</a>
+        <a href="{{ nav.homepage.url | url }}#work-notes">Work &amp; notes</a>
+        <a href="{{ nav.homepage.url | url }}#elsewhere">Elsewhere</a>
+      </nav>
+    </header>
+    <main id="content" tabindex="-1">{% block content %}{{ page.content }}{% endblock %}</main>
+    <footer><span>{{ config.site_name | e }}</span><span>Built with <a href="https://www.mkdocs.org/">MkDocs</a> · <a href="{{ config.repo_url | e }}">Source</a></span></footer>
+  </div>
+</body>
+</html>

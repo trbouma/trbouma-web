@@ -1,0 +1,20 @@
+site_name: Tim Bouma
+site_description: The personal website of Tim Bouma.
+site_author: Tim Bouma
+site_url: https://trbouma.github.io/trbouma-web/
+repo_url: https://github.com/trbouma/trbouma-web
+
+nav:
+  - Home: index.md
+
+theme:
+  name: null
+  custom_dir: theme
+  static_templates:
+    - 404.html
+
+plugins: []
+extra_css:
+  - stylesheets/site.css
+markdown_extensions:
+  - attr_list
