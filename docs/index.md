@@ -5,7 +5,11 @@
 Welcome. This is a place for my work, notes, and things I want to share.
 {: .intro }
 
-[Explore my GitHub](https://github.com/trbouma){: .button }
+[GitHub](https://github.com/trbouma){: .button }
+[Substack](https://trbouma.substack.com/){: .button }
+[Nostr](https://njump.me/npub1q6mcr8tlr3l4gus3sfnw6772s7zae6hqncmw5wj27ejud5wcxf7q0nx7d5){: .button }
+[LinkedIn](https://www.linkedin.com/in/trbouma/){: .button }
+{: .profile-links }
 
 ## About
 
@@ -24,6 +28,6 @@ Selected projects and writing will live here. For now, you can explore my public
 
 ## Elsewhere
 
-Find me on [GitHub @trbouma](https://github.com/trbouma).
+Find me on [GitHub @trbouma](https://github.com/trbouma), [Substack](https://trbouma.substack.com/), [Nostr](https://njump.me/npub1q6mcr8tlr3l4gus3sfnw6772s7zae6hqncmw5wj27ejud5wcxf7q0nx7d5), and [LinkedIn](https://www.linkedin.com/in/trbouma/).
 
 <!-- Add other public profiles or a public contact link when ready. -->
