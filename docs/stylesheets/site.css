@@ -41,8 +41,16 @@ footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1r
   main { padding-top: 3.5rem; }
 }
 
-/* Shell prompts and a steady block cursor evoke a terminal session. */
+/* Shell prompts and a blinking block cursor evoke a terminal session. */
 h1::before, h2::before { content: "> " / ""; color: var(--accent); }
 h1::after { content: ""; display: inline-block; width: .55em; height: .85em; margin-left: .25em; background: var(--accent); vertical-align: -.05em; }
 .profile-links .button::before { content: "[ " / ""; }
 .profile-links .button::after { content: " ]" / ""; }
+
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  h1::after { animation: cursor-blink 1s step-end infinite; }
+}
