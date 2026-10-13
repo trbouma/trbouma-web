@@ -1,4 +1,4 @@
-<p class="eyebrow">A personal corner of the web</p>
+<p class="eyebrow"><span aria-hidden="true">$ </span>whoami</p>
 
 # Tim Bouma
 
